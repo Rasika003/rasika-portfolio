@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rasika M — HR Professional & People Analytics</title>
+  <meta name="description" content="Portfolio of Rasika M — HR Professional specializing in People Analytics, Talent Acquisition, and Data-Driven Workforce Decisions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== ANIMATED BACKGROUND ===== -->
+  <div class="bg-animation">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- ===== CURSOR GLOW ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== ADMIN TOOLBAR ===== -->
+  <div class="admin-toolbar" id="adminToolbar">
+    <span class="admin-label"><i class="fas fa-shield-alt"></i> Admin Mode Active</span>
+    <div class="admin-actions">
+      <button class="admin-btn save-btn" id="saveBtn" title="Save changes"><i class="fas fa-save"></i> Save</button>
+      <button class="admin-btn export-btn" id="exportBtn" title="Export portfolio"><i class="fas fa-download"></i> Export</button>
+      <button class="admin-btn password-btn" id="changePasswordBtn" title="Change password"><i class="fas fa-key"></i> Password</button>
+      <button class="admin-btn lock-btn" id="lockBtn" title="Lock editing"><i class="fas fa-lock"></i> Lock</button>
+    </div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">R</span>
+        <span class="logo-dot"></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="admin-toggle" id="adminToggle" title="Admin Access">
+          <i class="fas fa-fingerprint"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        <span class="badge-text" data-editable="badge">Open to Opportunities</span>
+      </div>
+      <h1 class="hero-name reveal">
+        <span class="greeting">Hello, I'm</span>
+        <span class="name-text" data-editable="heroName">Rasika M</span>
+      </h1>
+      <div class="hero-titles reveal">
+        <span class="title-static">I'm a </span>
+        <span class="title-dynamic" id="typingText"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-tagline reveal" data-editable="heroTagline">Transforming HR with Data-Driven Decisions & Modern People Analytics</p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary"><span>View My Work</span><i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-outline"><span>Get In Touch</span><i class="fas fa-paper-plane"></i></a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-number" data-editable="stat1Num">5+</span>
+          <span class="stat-label" data-editable="stat1Label">HR Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-editable="stat2Num">10+</span>
+          <span class="stat-label" data-editable="stat2Label">Tools Mastered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-editable="stat3Num">4</span>
+          <span class="stat-label" data-editable="stat3Label">Certifications</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Introduction</span>
+        <h2 class="section-title" data-editable="aboutTitle">About Me</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-card-stack">
+            <div class="about-card-bg"></div>
+            <div class="about-avatar">
+              <div class="avatar-placeholder">
+                <span class="avatar-initials" data-editable="avatarInitials">RM</span>
+              </div>
+              <div class="avatar-ring"></div>
+            </div>
+          </div>
+          <div class="about-quick-info">
+            <div class="quick-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-editable="location">Chennai, Tamil Nadu, India</span>
+            </div>
+            <div class="quick-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span data-editable="degree">B.Tech AI & Data Science</span>
+            </div>
+            <div class="quick-item">
+              <i class="fas fa-book-reader"></i>
+              <span data-editable="currentStudy">Pursuing PGDM at Great Lakes</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h3 class="about-subtitle" data-editable="aboutSubtitle">HR Professional with a Data-Science DNA</h3>
+          <p class="about-description" data-editable="aboutDesc">HR professional and B.Tech graduate in AI & Data Science with project-based experience in talent acquisition, people analytics, onboarding coordination, and employee engagement. Built ATS-driven recruitment pipelines using Greenhouse, designed attrition risk dashboards in Excel, launched a live eNPS pulse survey cycle and delivered a CHRO-style headcount cost-performance report. Currently pursuing PGDM at Great Lakes Institute of Management. Combines a technical data background with HR functional skills to drive recruitment efficiency, employee retention and data-backed workforce decisions.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-chart-line"></i></div>
+              <div>
+                <h4 data-editable="hl1Title">People Analytics</h4>
+                <p data-editable="hl1Desc">Data-driven workforce insights & predictive HR models</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-users-cog"></i></div>
+              <div>
+                <h4 data-editable="hl2Title">Talent Acquisition</h4>
+                <p data-editable="hl2Desc">ATS-powered recruitment & passive candidate sourcing</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-handshake"></i></div>
+              <div>
+                <h4 data-editable="hl3Title">Employee Engagement</h4>
+                <p data-editable="hl3Desc">eNPS surveys, retention strategies & culture building</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title" data-editable="skillsTitle">Core Skills</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Skill Category 1 -->
+        <div class="skill-category reveal" data-category="0">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="skill-cat-title" data-editable="skillCat0Title">HR Technology & Systems</h3>
+          </div>
+          <div class="skill-tags" data-skill-group="0">
+            <span class="skill-tag" data-editable="true">Greenhouse ATS</span>
+            <span class="skill-tag" data-editable="true">LinkedIn Recruiter</span>
+            <span class="skill-tag" data-editable="true">BambooHR</span>
+            <span class="skill-tag" data-editable="true">Rippling</span>
+            <span class="skill-tag" data-editable="true">Culture Amp</span>
+            <span class="skill-tag" data-editable="true">SeekOut</span>
+            <span class="skill-tag" data-editable="true">Juicebox</span>
+          </div>
+          <button class="add-skill-btn admin-only" data-group="0" style="display:none;"><i class="fas fa-plus"></i> Add Skill</button>
+        </div>
+        <!-- Skill Category 2 -->
+        <div class="skill-category reveal" data-category="1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-chart-bar"></i></div>
+            <h3 class="skill-cat-title" data-editable="skillCat1Title">Analytics & Reporting</h3>
+          </div>
+          <div class="skill-tags" data-skill-group="1">
+            <span class="skill-tag" data-editable="true">Microsoft Excel</span>
+            <span class="skill-tag" data-editable="true">HR Metrics & KPI Tracking</span>
+            <span class="skill-tag" data-editable="true">Attrition Risk Analysis</span>
+            <span class="skill-tag" data-editable="true">eNPS Analysis & Segmentation</span>
+            <span class="skill-tag" data-editable="true">Workforce Reporting</span>
+            <span class="skill-tag" data-editable="true">Headcount Cost Analysis</span>
+            <span class="skill-tag" data-editable="true">Dashboard Design</span>
+            <span class="skill-tag" data-editable="true">Data Storytelling</span>
+          </div>
+          <button class="add-skill-btn admin-only" data-group="1" style="display:none;"><i class="fas fa-plus"></i> Add Skill</button>
+        </div>
+        <!-- Skill Category 3 -->
+        <div class="skill-category reveal" data-category="2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-user-tie"></i></div>
+            <h3 class="skill-cat-title" data-editable="skillCat2Title">HR Functional Skills</h3>
+          </div>
+          <div class="skill-tags" data-skill-group="2">
+            <span class="skill-tag" data-editable="true">Talent Acquisition</span>
+            <span class="skill-tag" data-editable="true">Candidate Sourcing</span>
+            <span class="skill-tag" data-editable="true">Candidate Screening</span>
+            <span class="skill-tag" data-editable="true">Candidate Scoring</span>
+            <span class="skill-tag" data-editable="true">Structured Interviewing</span>
+            <span class="skill-tag" data-editable="true">Onboarding Coordination</span>
+            <span class="skill-tag" data-editable="true">Employee Engagement Analysis</span>
+          </div>
+          <button class="add-skill-btn admin-only" data-group="2" style="display:none;"><i class="fas fa-plus"></i> Add Skill</button>
+        </div>
+        <!-- Skill Category 4 -->
+        <div class="skill-category reveal" data-category="3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-file-alt"></i></div>
+            <h3 class="skill-cat-title" data-editable="skillCat3Title">HR Documentation</h3>
+          </div>
+          <div class="skill-tags" data-skill-group="3">
+            <span class="skill-tag" data-editable="true">HR Policy</span>
+            <span class="skill-tag" data-editable="true">Compliance Documentation</span>
+            <span class="skill-tag" data-editable="true">SOP Development</span>
+            <span class="skill-tag" data-editable="true">Workflow Mapping</span>
+            <span class="skill-tag" data-editable="true">Process Optimization</span>
+          </div>
+          <button class="add-skill-btn admin-only" data-group="3" style="display:none;"><i class="fas fa-plus"></i> Add Skill</button>
+        </div>
+        <!-- Skill Category 5 -->
+        <div class="skill-category reveal" data-category="4">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-bullhorn"></i></div>
+            <h3 class="skill-cat-title" data-editable="skillCat4Title">Business Communication</h3>
+          </div>
+          <div class="skill-tags" data-skill-group="4">
+            <span class="skill-tag" data-editable="true">Microsoft PowerPoint</span>
+            <span class="skill-tag" data-editable="true">Microsoft Word</span>
+            <span class="skill-tag" data-editable="true">Executive Presentation Development</span>
+            <span class="skill-tag" data-editable="true">Stakeholder Communication</span>
+          </div>
+          <button class="add-skill-btn admin-only" data-group="4" style="display:none;"><i class="fas fa-plus"></i> Add Skill</button>
+        </div>
+      </div>
+      <button class="add-category-btn admin-only" id="addCategoryBtn" style="display:none;"><i class="fas fa-plus-circle"></i> Add Skill Category</button>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title" data-editable="projectsTitle">HR Projects</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal" data-project="0">
+          <div class="project-number">01</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-exclamation-triangle"></i></div>
+            <h3 class="project-title" data-editable="proj0Title">Attrition Early Warning Dashboard</h3>
+          </div>
+          <div class="project-problem">
+            <span class="problem-label">Problem</span>
+            <p data-editable="proj0Problem">HR had no proactive signal for attrition risk, reacting only post-resignation.</p>
+          </div>
+          <div class="project-solution">
+            <span class="solution-label">Solution & Impact</span>
+            <p data-editable="proj0Solution">Built a predictive risk model using HRIS data. Designed a weighted Excel scoring model integrating tenure, performance ratings, absenteeism, and salary bands. Built a red-amber-green department heatmap, correlated eNPS dips with risk scores to identify engagement-driven flight risks. Delivered a monthly attrition report template and a three-tier retention action playbook giving HR a 60–90 day advance warning on potential exits.</p>
+          </div>
+          <div class="project-tools">
+            <span class="tool-chip">Excel</span>
+            <span class="tool-chip">HRIS Data</span>
+            <span class="tool-chip">eNPS</span>
+            <span class="tool-chip">Heatmapping</span>
+          </div>
+          <button class="delete-project-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-project="1">
+          <div class="project-number">02</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-search-plus"></i></div>
+            <h3 class="project-title" data-editable="proj1Title">Passive Candidate Intelligence Pipeline</h3>
+          </div>
+          <div class="project-problem">
+            <span class="problem-label">Problem</span>
+            <p data-editable="proj1Problem">Job-posting-only recruitment consistently missed passive talent pools.</p>
+          </div>
+          <div class="project-solution">
+            <span class="solution-label">Solution & Impact</span>
+            <p data-editable="proj1Solution">Built an AI-assisted sourcing and structured assessment workflow. Used Juicebox and SeekOut to source passive candidates. Built a weighted Excel scoring matrix on must-have skills, culture fit, and career trajectory. Created a Greenhouse Interview Kit with structured scorecards, templated candidate status emails, and documented the workflow as a complete SOP. Produced a reusable sourcing-to-assessment pipeline reducing unstructured hiring decisions.</p>
+          </div>
+          <div class="project-tools">
+            <span class="tool-chip">Juicebox</span>
+            <span class="tool-chip">SeekOut</span>
+            <span class="tool-chip">Greenhouse ATS</span>
+            <span class="tool-chip">Excel</span>
+          </div>
+          <button class="delete-project-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal" data-project="2">
+          <div class="project-number">03</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-clipboard-check"></i></div>
+            <h3 class="project-title" data-editable="proj2Title">Zero-Gap Onboarding Tracker with IT-HR Integration</h3>
+          </div>
+          <div class="project-problem">
+            <span class="problem-label">Problem</span>
+            <p data-editable="proj2Problem">Onboarding handoffs between HR, IT, Finance, and managers created costly delays and compliance gaps.</p>
+          </div>
+          <div class="project-solution">
+            <span class="solution-label">Solution & Impact</span>
+            <p data-editable="proj2Solution">Audited workflows in Rippling and BambooHR tracing device provisioning, payroll setup, and system access triggers. Built an Excel master tracker with conditional formatting to flag delayed tasks in real time. Produced a before-and-after PowerPoint deck with time-saved metrics and cost-of-bad-onboarding calculation. Delivered a mapped IT-HR integration SOP and a live tracker eliminating manual follow-up effort.</p>
+          </div>
+          <div class="project-tools">
+            <span class="tool-chip">Rippling</span>
+            <span class="tool-chip">BambooHR</span>
+            <span class="tool-chip">Excel</span>
+            <span class="tool-chip">PowerPoint</span>
+          </div>
+          <button class="delete-project-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal" data-project="3">
+          <div class="project-number">04</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
+            <h3 class="project-title" data-editable="proj3Title">People Analytics CHRO Report: Headcount Cost vs. Performance</h3>
+          </div>
+          <div class="project-problem">
+            <span class="problem-label">Problem</span>
+            <p data-editable="proj3Problem">Leadership lacked a structured view linking payroll cost to employee performance tiers.</p>
+          </div>
+          <div class="project-solution">
+            <span class="solution-label">Solution & Impact</span>
+            <p data-editable="proj3Solution">Analyzed 50-employee dataset in Excel pivot tables across department, salary band, performance rating, tenure, and absenteeism. Classified employees into high, mid, low cohorts; calculated cost-per-cohort and absenteeism rate. Benchmarked against Visier and ChartHop, packaged into an 8-slide CHRO-style PowerPoint with executive summary, data visualizations and three prioritized HR recommendations. Delivered a board-ready people analytics report demonstrating C-suite-level data storytelling.</p>
+          </div>
+          <div class="project-tools">
+            <span class="tool-chip">Excel Pivots</span>
+            <span class="tool-chip">Visier</span>
+            <span class="tool-chip">ChartHop</span>
+            <span class="tool-chip">PowerPoint</span>
+          </div>
+          <button class="delete-project-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal" data-project="4">
+          <div class="project-number">05</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-poll"></i></div>
+            <h3 class="project-title" data-editable="proj4Title">End-to-End eNPS Pulse Survey Cycle</h3>
+          </div>
+          <div class="project-problem">
+            <span class="problem-label">Problem</span>
+            <p data-editable="proj4Problem">No engagement baseline existed for a simulated organisation with no survey history.</p>
+          </div>
+          <div class="project-solution">
+            <span class="solution-label">Solution & Impact</span>
+            <p data-editable="proj4Solution">Designed a 6-question eNPS survey in Culture Amp. Collected real responses from 20 professionals, calculated eNPS score, segmented by department and tenure. Built a 9-box performance-potential grid in Excel, drafted a formal survey policy document covering cadence and confidentiality. Built a 5-slide leadership insight deck in PowerPoint with engagement drivers and recommended HR interventions. Delivered a full live-data engagement cycle replicating exactly what an HR team executes post-survey.</p>
+          </div>
+          <div class="project-tools">
+            <span class="tool-chip">Culture Amp</span>
+            <span class="tool-chip">Excel</span>
+            <span class="tool-chip">PowerPoint</span>
+            <span class="tool-chip">MS Word</span>
+          </div>
+          <button class="delete-project-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+        </div>
+      </div>
+      <button class="add-project-btn admin-only" id="addProjectBtn" style="display:none;"><i class="fas fa-plus-circle"></i> Add New Project</button>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title" data-editable="eduTitle">Education</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="timeline" id="educationTimeline">
+        <div class="timeline-item reveal" data-edu="0">
+          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-editable="edu0Date">2026 – Present</div>
+            <h3 class="timeline-title" data-editable="edu0Title">PGDM — Human Resources</h3>
+            <p class="timeline-institution" data-editable="edu0Inst">Great Lakes Institute of Management, Online</p>
+            <p class="timeline-desc" data-editable="edu0Desc">Specializing in HR Management with focus on strategic workforce planning and organizational behavior.</p>
+            <button class="delete-edu-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="timeline-item reveal" data-edu="1">
+          <div class="timeline-dot"><i class="fas fa-university"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-editable="edu1Date">2022 – 2026</div>
+            <h3 class="timeline-title" data-editable="edu1Title">B.Tech — Artificial Intelligence & Data Science</h3>
+            <p class="timeline-institution" data-editable="edu1Inst">Saveetha Engineering College</p>
+            <p class="timeline-desc" data-editable="edu1Desc">Built strong foundation in AI, Machine Learning, Data Analytics, and Statistical Modeling with applications in HR Technology.</p>
+            <button class="delete-edu-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+      </div>
+      <button class="add-edu-btn admin-only" id="addEduBtn" style="display:none;"><i class="fas fa-plus-circle"></i> Add Education</button>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title" data-editable="certTitle">Certifications</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="certs-grid" id="certsGrid">
+        <div class="cert-card reveal" data-cert="0">
+          <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+          <h3 class="cert-name" data-editable="cert0Name">HR Analytics Certificate</h3>
+          <p class="cert-issuer" data-editable="cert0Issuer">Great Learning Academy</p>
+          <button class="delete-cert-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+        </div>
+        <div class="cert-card reveal" data-cert="1">
+          <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+          <h3 class="cert-name" data-editable="cert1Name">ATS & Talent Acquisition Expert</h3>
+          <p class="cert-issuer" data-editable="cert1Issuer">NextinHR</p>
+          <button class="delete-cert-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+        </div>
+        <div class="cert-card reveal" data-cert="2">
+          <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+          <h3 class="cert-name" data-editable="cert2Name">AI-Powered Recruiter</h3>
+          <p class="cert-issuer" data-editable="cert2Issuer">NextinHR</p>
+          <button class="delete-cert-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+        </div>
+        <div class="cert-card reveal" data-cert="3">
+          <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+          <h3 class="cert-name" data-editable="cert3Name">Employee Onboarding & Motivation</h3>
+          <p class="cert-issuer" data-editable="cert3Issuer">Alison</p>
+          <button class="delete-cert-btn admin-only" style="display:none;"><i class="fas fa-trash"></i></button>
+        </div>
+      </div>
+      <button class="add-cert-btn admin-only" id="addCertBtn" style="display:none;"><i class="fas fa-plus-circle"></i> Add Certification</button>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title" data-editable="contactTitle">Get In Touch</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <p class="contact-intro" data-editable="contactIntro">I'm always open to discussing new opportunities in HR, People Analytics, and Talent Acquisition. Feel free to reach out!</p>
+          <div class="contact-items">
+            <a class="contact-item" href="mailto:rasikamaran1222@gmail.com">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value" data-editable="contactEmail">rasikamaran1222@gmail.com</span>
+              </div>
+            </a>
+            <a class="contact-item" href="tel:+919629139922">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value" data-editable="contactPhone">+91-9629139922</span>
+              </div>
+            </a>
+            <a class="contact-item" href="https://linkedin.com/in/rasikamaran" target="_blank">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value" data-editable="contactLinkedin">linkedin.com/in/rasikamaran</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value" data-editable="contactLocation">Chennai, Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-visual">
+          <div class="contact-cta-card">
+            <div class="cta-icon"><i class="fas fa-handshake"></i></div>
+            <h3 data-editable="ctaTitle">Let's Build Something Great Together</h3>
+            <p data-editable="ctaDesc">Whether it's about HR analytics, talent strategy, or just a conversation about the future of work — I'd love to hear from you.</p>
+            <a href="mailto:rasikamaran1222@gmail.com" class="btn btn-primary btn-lg"><span>Send a Message</span><i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">R<span class="logo-dot"></span></span>
+          <p data-editable="footerText">Designed with passion. Built for impact.</p>
+        </div>
+        <div class="footer-social">
+          <a href="mailto:rasikamaran1222@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/rasikamaran" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Rasika M. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== PASSWORD MODAL ===== -->
+  <div class="modal-overlay" id="passwordModal">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3 id="modalTitle">Admin Access</h3>
+        <p id="modalSubtitle">Enter your password to enable editing</p>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="off" />
+          <button class="input-toggle" id="togglePassword"><i class="fas fa-eye"></i></button>
+        </div>
+        <p class="modal-error" id="passwordError"></p>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-outline modal-cancel" id="modalCancel">Cancel</button>
+        <button class="btn btn-primary modal-submit" id="modalSubmit"><span>Unlock</span><i class="fas fa-unlock"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CHANGE PASSWORD MODAL ===== -->
+  <div class="modal-overlay" id="changePasswordModal">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-icon" style="background: linear-gradient(135deg, #f59e0b, #ef4444);"><i class="fas fa-key"></i></div>
+        <h3>Change Password</h3>
+        <p>Set a new secure password for admin access</p>
+      </div>
+      <div class="modal-body">
+        <div class="input-group" style="margin-bottom:16px;">
+          <input type="password" id="currentPasswordInput" placeholder="Current password" autocomplete="off" />
+        </div>
+        <div class="input-group" style="margin-bottom:16px;">
+          <input type="password" id="newPasswordInput" placeholder="New password (min 6 characters)" autocomplete="off" />
+        </div>
+        <div class="input-group">
+          <input type="password" id="confirmPasswordInput" placeholder="Confirm new password" autocomplete="off" />
+        </div>
+        <p class="modal-error" id="changePasswordError"></p>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-outline modal-cancel" id="changePwCancel">Cancel</button>
+        <button class="btn btn-primary modal-submit" id="changePwSubmit"><span>Update Password</span><i class="fas fa-check"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST NOTIFICATION ===== -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMessage">Changes saved successfully!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
