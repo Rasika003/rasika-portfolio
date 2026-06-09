@@ -1,2 +1,2 @@
 # rasika-portfolio
-My personal full stack developer portfolio
+My personal portfolio
